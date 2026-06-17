@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
@@ -7,18 +7,16 @@
     <UseWindowsForms>true</UseWindowsForms>
     <SelfContained>true</SelfContained>
 
-    <!-- SINGLE FILE (WAJIB di csproj biar konsisten) -->
     <PublishSingleFile>true</PublishSingleFile>
     <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
 
-    <!-- SECURITY / CLEAN BUILD -->
     <DebugType>none</DebugType>
     <DebugSymbols>false</DebugSymbols>
 
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
 
-    <ApplicationIcon>assets/Icon.ico</ApplicationIcon>
+    <ApplicationIcon>assets\Icon.ico</ApplicationIcon>
   </PropertyGroup>
 <ItemGroup>
     <EmbeddedResource Include="assets\Icon.ico" />
