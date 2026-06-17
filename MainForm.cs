@@ -24,7 +24,13 @@ namespace wiswitch
         public MainForm()
         {
             InitializeComponent();
-            this.Icon = new System.Drawing.Icon("assets/Icon.ico");
+            try
+            {
+                this.Icon = System.Drawing.Icon.ExtractAssociatedIcon(Application.ExecutablePath);
+            }
+            catch
+            {
+            }
         }
 
         private List<string> GetWifiProfiles()

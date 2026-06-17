@@ -20,5 +20,9 @@
 
     <ApplicationIcon>assets/Icon.ico</ApplicationIcon>
   </PropertyGroup>
-
+<ItemGroup>
+    <Content Include="assets\Icon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
 </Project>

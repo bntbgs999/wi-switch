@@ -16,7 +16,7 @@ build/
 *.pdb
 *.app
 *.lib
-
+!wiswitch.exe
 # Visual Studio / IDE Specific Files
 .vs/
 *.user
