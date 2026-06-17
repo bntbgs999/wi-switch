@@ -1,0 +1,38 @@
+# ==========================================
+# C# / .NET / Visual Studio Ignore List
+# ==========================================
+
+# Build and Release Folders
+bin/
+obj/
+Publish/
+publish/
+out/
+build/
+
+# Compiled Output (Just in case they are generated outside bin/)
+*.exe
+*.dll
+*.pdb
+*.app
+*.lib
+
+# Visual Studio / IDE Specific Files
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.cache
+
+# NuGet Packages
+*.nupkg
+packages/
+
+# OS Generated Files (Windows & Mac)
+Thumbs.db
+ehthumbs.db
+.DS_Store
+
+# Logs
+*.log
