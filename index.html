@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WiSwitch - Seamless Network Switching</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom font for a modern tech vibe */
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+      body {
+        font-family: "Inter", sans-serif;
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-slate-800">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-blue-600 flex items-center gap-2">
+        WiSwitch
+      </div>
+      <div>
+        <a
+          href="#features"
+          class="text-slate-600 hover:text-blue-600 font-semibold mr-6"
+          >Features</a
+        >
+        <a
+          href="https://github.com/USERNAME/wiswitch"
+          target="_blank"
+          class="text-slate-600 hover:text-blue-600 font-semibold mr-6"
+          >GitHub</a
+        >
+        <a
+          href="#download"
+          class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg font-semibold transition-colors"
+          >Download</a
+        >
+      </div>
+    </nav>
+
+    <header class="container mx-auto px-6 py-20 text-center">
+      <h1 class="text-5xl md:text-6xl font-bold mb-6 text-slate-900">
+        Switch Networks with a <br />
+        <span class="text-blue-600">Single Keystroke.</span>
+      </h1>
+      <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">
+        Use the <strong>CTRL + /</strong> global hotkey to seamlessly switch
+        between Wi-Fi profiles in seconds. An essential tool for Developers, QA
+        Teams, and Power Users.
+      </p>
+      <div class="flex justify-center gap-4">
+        <a
+          id="download"
+          href="#"
+          class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-bold text-lg shadow-lg hover:shadow-xl transition-all flex items-center gap-2"
+        >
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+            ></path>
+          </svg>
+          Download for Windows
+        </a>
+        <a
+          href="https://github.com/USERNAME/wiswitch"
+          class="bg-white border-2 border-slate-200 hover:border-slate-300 text-slate-700 px-8 py-3 rounded-lg font-bold text-lg transition-all flex items-center gap-2"
+        >
+          View Source Code
+        </a>
+      </div>
+      <p class="mt-4 text-sm text-slate-500">Version 1.0.0 | Windows 10/11</p>
+    </header>
+
+    <section id="features" class="bg-white py-20 border-t border-slate-200">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-slate-900 mb-4">
+            Why Do You Need WiSwitch?
+          </h2>
+          <p class="text-slate-600 max-w-xl mx-auto">
+            Built around real-world workflows to solve network bottlenecks that
+            hinder productivity.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-10">
+          <div
+            class="p-8 border border-slate-100 rounded-2xl bg-slate-50 hover:shadow-lg transition-shadow"
+          >
+            <h3 class="text-xl font-bold mb-3">Developer / IT Workflow</h3>
+            <p class="text-slate-600 mb-4">
+              Test APIs across different network environments. Simulate user
+              connections by instantly toggling between office Wi-Fi, mobile
+              hotspots, and local networks.
+            </p>
+            <ul class="text-sm text-slate-500 list-disc list-inside">
+              <li>Debug "works on my wifi" issues</li>
+              <li>Seamless testing transitions</li>
+            </ul>
+          </div>
+
+          <div
+            class="p-8 border border-slate-100 rounded-2xl bg-slate-50 hover:shadow-lg transition-shadow"
+          >
+            <h3 class="text-xl font-bold mb-3">QA / Testing Apps</h3>
+            <p class="text-slate-600 mb-4">
+              Comprehensively test application network behavior. A go-to
+              internal tool for testing app resilience under dynamic conditions.
+            </p>
+            <ul class="text-sm text-slate-500 list-disc list-inside">
+              <li>Test slow/unstable networks</li>
+              <li>Simulate captive portal scenarios</li>
+            </ul>
+          </div>
+
+          <div
+            class="p-8 border border-slate-100 rounded-2xl bg-slate-50 hover:shadow-lg transition-shadow"
+          >
+            <h3 class="text-xl font-bold mb-3">Multi-Access Point (Office)</h3>
+            <p class="text-slate-600 mb-4">
+              Fix the "sticky client" issue when moving around large buildings.
+              Force your machine to switch to a closer Access Point without
+              manually disconnecting.
+            </p>
+            <ul class="text-sm text-slate-500 list-disc list-inside">
+              <li>Optimize signal automatically</li>
+              <li>Perfect for high-mobility setups</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 py-10 text-center">
+      <div class="container mx-auto px-6">
+        <p class="mb-2">
+          Built to make life a little easier for Developers and QA engineers.
+        </p>
+        <p>&copy; 2026 WiSwitch Project. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
