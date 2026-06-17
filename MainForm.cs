@@ -24,15 +24,31 @@ namespace wiswitch
         public MainForm()
         {
             InitializeComponent();
+
             try
             {
-                this.Icon = System.Drawing.Icon.ExtractAssociatedIcon(Application.ExecutablePath);
+                // Mengambil icon yang sudah tertanam di dalam .exe
+                var stream = System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("wiswitch.assets.Icon.ico");
+
+                if (stream != null)
+                {
+                    this.Icon = new System.Drawing.Icon(stream);
+                }
+                else
+                {
+                    // Fallback jika tidak ditemukan, cari di folder lokal
+                    string iconPath = System.IO.Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, @"assets\Icon.ico");
+                    if (System.IO.File.Exists(iconPath))
+                    {
+                        this.Icon = new System.Drawing.Icon(iconPath);
+                    }
+                }
             }
             catch
             {
+                // Biarkan pakai icon default jika semua gagal
             }
         }
-
         private List<string> GetWifiProfiles()
         {
             List<string> profiles = new List<string>();
